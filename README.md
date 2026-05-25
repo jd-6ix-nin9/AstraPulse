@@ -1,53 +1,114 @@
 # AstraPulse
 
-## Overview
-AstraPulse is an IoT monitoring and prediction project built using ESP32, Wokwi, MQTT and Node-RED.
+![AstraPulse Logo](screenshots/logo.png.png)
 
-The system collects sensor data, transmits it through MQTT, processes it in Node-RED and visualizes the results through dashboards and analytics.
+## 🚀 Overview
 
-## Features
-- ESP32 based sensing system
-- MQTT communication
-- Node-RED dashboard
-- Real-time monitoring
-- Sensor data processing
-- EWMA based prediction/filtering
-- CSV/data logging support
+**AstraPulse** is a real-time IoT monitoring and predictive analytics system built using **ESP32, Wokwi, MQTT and Node-RED**.
 
-## Tech Stack
-- ESP32 / Arduino
-- Wokwi simulation
-- MQTT (HiveMQ)
-- Node-RED
-- Dashboard UI
+The project captures live sensor data, transmits it using MQTT, processes the information inside Node-RED and visualizes it through interactive dashboards. AstraPulse also incorporates filtering/predictive logic using EWMA concepts for smoother monitoring and analysis.
 
-## Project Flow
-Sensor → ESP32 → MQTT → Node-RED → Dashboard
+---
 
-## Repository Structure
+## ✨ Features
+
+- Real-time sensor monitoring  
+- ESP32 + Wokwi simulation  
+- MQTT-based communication  
+- Node-RED dashboard and automation  
+- Data processing and analytics  
+- EWMA-based smoothing/prediction  
+- Dashboard visualization  
+- CSV/data logging support  
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Hardware | ESP32 |
+| Simulation | Wokwi |
+| Communication | MQTT (HiveMQ) |
+| Backend Logic | Node-RED |
+| Programming | Arduino / C++ |
+| Visualization | Node-RED Dashboard |
+
+---
+
+## 📡 Project Workflow
+
 ```text
-wokwi/
-node-red/
-screenshots/
-docs/
-README.md
+Sensor → ESP32 → MQTT → Node-RED → Dashboard → Analytics
 ```
 
-## Setup
+---
 
-### 1. Wokwi
-Open the Wokwi project files from the `wokwi` folder.
+## 📁 Repository Structure
 
-### 2. Node-RED
-Import `node-red/flows.json`.
+```text
+AstraPulse/
+├── wokwi/
+├── node-red/
+├── screenshots/
+├── docs/
+├── README.md
+├── LICENSE
+├── .gitignore
+└── setup-guide.md
+```
 
-Install dependencies if required.
+---
 
-### 3. MQTT
-Configure MQTT broker and credentials as needed.
+## ⚙️ Setup Guide
 
-## Screenshots
-See the `screenshots/` folder.
+### 1. Wokwi Setup
+Open the files inside the `wokwi/` folder.
 
-## License
-MIT License
+### 2. Node-RED Setup
+Import:
+
+```text
+node-red/flows.json
+```
+
+Install required palette nodes if prompted.
+
+### 3. MQTT Setup
+Configure your MQTT broker and credentials.
+
+### 4. Run
+Deploy Node-RED and start monitoring through the dashboard.
+
+---
+
+## 🖼 Project Screenshots
+
+
+### dashboard1.png
+![dashboard1.png.png](screenshots/dashboard1.png.png)
+
+### dashboard2.png
+![dashboard2.png.png](screenshots/dashboard2.png.png)
+
+### dashboard3.png
+![dashboard3.png.png](screenshots/dashboard3.png.png)
+
+### node-red-flow.png
+![node-red-flow.png.png](screenshots/node-red-flow.png.png)
+
+### wokwi-circuit.png
+![wokwi-circuit.png.png](screenshots/wokwi-circuit.png.png)
+
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+Developed as part of the **AstraPulse IoT monitoring project**.
