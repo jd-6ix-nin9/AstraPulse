@@ -1,0 +1,920 @@
+[
+    {
+        "id": "803b7ab6696fae80",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "645ff6787ab8cc70",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Times New Roman,Times,serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "AstraPulse",
+                "default": "#4B7930",
+                "baseColor": "#ffffff",
+                "baseFont": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#d4ba11",
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#003366",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#0a1423",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#141e2d",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#1c2d41",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#1c2d41",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#ff9933",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#ff8000",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#1c2d41",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "AstraPulse",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 54,
+                "sy": 54,
+                "gx": 8,
+                "gy": 12,
+                "cx": 10,
+                "cy": 12,
+                "px": 8,
+                "py": 12
+            }
+        }
+    },
+    {
+        "id": "958766afda2d1b8c",
+        "type": "ui_tab",
+        "name": "AstraPulse",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "edc7e9fca42cd3c3",
+        "type": "ui_group",
+        "name": "Thermal",
+        "tab": "958766afda2d1b8c",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "757cf4e95316da58",
+        "type": "ui_group",
+        "name": "Motion",
+        "tab": "958766afda2d1b8c",
+        "order": 2,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9b755b6620a07a17",
+        "type": "ui_group",
+        "name": "Attitude",
+        "tab": "958766afda2d1b8c",
+        "order": 3,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d09ddb16474a4c83",
+        "type": "ui_group",
+        "name": "System Status",
+        "tab": "958766afda2d1b8c",
+        "order": 4,
+        "disp": true,
+        "width": 22,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9eb230d79dce3545",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e818cc42b788b354",
+        "type": "ui_tab",
+        "name": "Telemetry",
+        "icon": "timeline",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8757587d60a5e4fe",
+        "type": "ui_group",
+        "name": "Thermal",
+        "tab": "e818cc42b788b354",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b5b27e0e96120a5f",
+        "type": "ui_group",
+        "name": "Motion",
+        "tab": "e818cc42b788b354",
+        "order": 2,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e1b858534651d321",
+        "type": "ui_group",
+        "name": "Attitude",
+        "tab": "e818cc42b788b354",
+        "order": 3,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bc078ab74c16ed0c",
+        "type": "ui_tab",
+        "name": "Future Trends",
+        "icon": "fast_forward",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fb2373e5e894556e",
+        "type": "ui_group",
+        "name": "Alert Tab",
+        "tab": "bc078ab74c16ed0c",
+        "order": 1,
+        "disp": true,
+        "width": 21,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "59f64a2268c2034d",
+        "type": "ui_spacer",
+        "z": "803b7ab6696fae80",
+        "name": "spacer",
+        "group": "fb2373e5e894556e",
+        "order": 3,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "2ef7a1fa38e1d519",
+        "type": "ui_spacer",
+        "z": "803b7ab6696fae80",
+        "name": "spacer",
+        "group": "fb2373e5e894556e",
+        "order": 5,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "69aafda9e1143bee",
+        "type": "ui_gauge",
+        "z": "803b7ab6696fae80",
+        "name": "",
+        "group": "edc7e9fca42cd3c3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "",
+        "format": "{{value}} \t°C",
+        "min": "-24",
+        "max": "80",
+        "colors": [
+            "#28a745",
+            "#ffc107",
+            "#dc3545"
+        ],
+        "seg1": "50",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e76897fb9c09be3b",
+        "type": "ui_gauge",
+        "z": "803b7ab6696fae80",
+        "name": "",
+        "group": "757cf4e95316da58",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Acceleration",
+        "label": "",
+        "format": "{{value}}  m/s²",
+        "min": "0",
+        "max": "19.62",
+        "colors": [
+            "#28a745",
+            "#ffc107",
+            "#dc3545"
+        ],
+        "seg1": "11.772",
+        "seg2": "14.715",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a571f007f6ed87b8",
+        "type": "ui_gauge",
+        "z": "803b7ab6696fae80",
+        "name": "",
+        "group": "9b755b6620a07a17",
+        "order": 1,
+        "width": 7,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Gyroscope",
+        "label": "units",
+        "format": "{{value}} rad/s",
+        "min": 0,
+        "max": "4.363",
+        "colors": [
+            "#28a745",
+            "#ffc107",
+            "#dc3545"
+        ],
+        "seg1": "0.087",
+        "seg2": "0.524",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c80e40a1c3fd9604",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Temperature",
+        "func": "msg.payload = msg.payload.temperature;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "69aafda9e1143bee",
+                "276114e764e8acc7",
+                "c8d3095f334f45a7"
+            ]
+        ]
+    },
+    {
+        "id": "da6cc199a81b2e0b",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Acceleration",
+        "func": "msg.payload = msg.payload.acceleration;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "e76897fb9c09be3b"
+            ]
+        ]
+    },
+    {
+        "id": "46e8f981277020c4",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Gyroscope",
+        "func": "msg.payload = msg.payload.gyro;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "a571f007f6ed87b8"
+            ]
+        ]
+    },
+    {
+        "id": "eb88ee52dc177bdf",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "System Status",
+        "func": "let t = msg.payload.temperature;\nlet a = msg.payload.acceleration;\nlet g = msg.payload.gyro;\n\nlet thermal = \"\";\nlet motion = \"\";\nlet attitude = \"\";\n\n// Temperature\nif (t < 50) thermal = \"THERMAL NOMINAL\";\nelse if (t < 60) thermal = \"THERMAL RISE\";\nelse thermal = \"THERMAL BREACH\";\n\n// Acceleration\nif (a < 11.772) motion = \"MOTION STABLE\";\nelse if (a < 14.715) motion = \"MOTION DISTURBANCE\";\nelse motion = \"MOTION TURBULENCE\";\n\n// Gyro\nif (g <= 0.087) attitude = \"ATTITUDE LOCKED\";\nelse if (g <= 0.524) attitude = \"ATTITUDE DRIFT\";\nelse attitude = \"ATTITUDE LOSS\";\n\nmsg.payload = thermal + \" / \" + motion + \" / \" + attitude;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 400,
+        "wires": [
+            [
+                "c6c656ae2a4b1ed8"
+            ]
+        ]
+    },
+    {
+        "id": "c6c656ae2a4b1ed8",
+        "type": "ui_text",
+        "z": "803b7ab6696fae80",
+        "group": "d09ddb16474a4c83",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
+        "fontSize": 16,
+        "color": "#ff9933",
+        "x": 850,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "52740f2aa9a1dc65",
+        "type": "mqtt in",
+        "z": "803b7ab6696fae80",
+        "name": "",
+        "topic": "astrapulse/jd/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9eb230d79dce3545",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "c80e40a1c3fd9604",
+                "da6cc199a81b2e0b",
+                "46e8f981277020c4",
+                "eb88ee52dc177bdf",
+                "595268d21616c829",
+                "1650919c443bc45f",
+                "4d3a465a74fa0aa0",
+                "baa568e190c2a8f9",
+                "ca969019b0e5aef8",
+                "9d235f504dc10503"
+            ]
+        ]
+    },
+    {
+        "id": "276114e764e8acc7",
+        "type": "ui_chart",
+        "z": "803b7ab6696fae80",
+        "name": "",
+        "group": "8757587d60a5e4fe",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature ",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a42ced27f6d33191",
+        "type": "ui_chart",
+        "z": "803b7ab6696fae80",
+        "name": "",
+        "group": "e1b858534651d321",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Gyroscope",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77f3",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2cd3998ed3dea1f2",
+        "type": "ui_chart",
+        "z": "803b7ab6696fae80",
+        "name": "",
+        "group": "b5b27e0e96120a5f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Acceleration",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77f3",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "595268d21616c829",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Acc XYZ",
+        "func": "node.send({ topic: \"X\", payload: msg.payload.acc_x });\nnode.send({ topic: \"Y\", payload: msg.payload.acc_y });\n\nmsg.topic = \"Z\";\nmsg.payload = msg.payload.acc_z;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 460,
+        "wires": [
+            [
+                "2cd3998ed3dea1f2"
+            ]
+        ]
+    },
+    {
+        "id": "1650919c443bc45f",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Gyro XYZ",
+        "func": "node.send({topic:\"X\", payload: msg.payload.gyro_x});\nnode.send({topic:\"Y\", payload: msg.payload.gyro_y});\n\nmsg.topic = \"Z\";\nmsg.payload = msg.payload.gyro_z;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 600,
+        "wires": [
+            [
+                "a42ced27f6d33191"
+            ]
+        ]
+    },
+    {
+        "id": "272cfae9d1f57026",
+        "type": "file",
+        "z": "803b7ab6696fae80",
+        "name": "",
+        "filename": "C:/Users/dawda/OneDrive/Desktop/astrapulse_log.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 1000,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2516dd27cd6e4a2c",
+        "type": "ui_text",
+        "z": "803b7ab6696fae80",
+        "group": "fb2373e5e894556e",
+        "order": 1,
+        "width": 14,
+        "height": 1,
+        "name": "",
+        "label": "Temperature Prediction",
+        "format": "{{msg.payload}} ",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1130,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "4d3a465a74fa0aa0",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "CSV Function",
+        "func": "let t = msg.payload.temperature;\nlet ax = msg.payload.acc_x;\nlet ay = msg.payload.acc_y;\nlet az = msg.payload.acc_z;\nlet gx = msg.payload.gyro_x;\nlet gy = msg.payload.gyro_y;\nlet gz = msg.payload.gyro_z;\nlet avg_accn = msg.payload.acceleration;\nlet avg_gyro = msg.payload.gyro\n\nmsg.payload = t + \",\" + ax + \",\" + ay + \",\" + az + \",\" + gx + \",\" + gy + \",\" + gz + \",\" + avg_accn + \",\" + avg_gyro + \"\\n\" ;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 720,
+        "wires": [
+            [
+                "272cfae9d1f57026"
+            ]
+        ]
+    },
+    {
+        "id": "c8d3095f334f45a7",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Temp. Predictor",
+        "func": "let alpha = 0.6;\n\n// get history (last 10)\nlet hist = context.get(\"hist\") || [];\n\n// add current\nhist.push(msg.payload);\nif (hist.length > 10) hist.shift();\n\ncontext.set(\"hist\", hist);\n\n// compute EWMA over window\nlet smooth = hist[0];\n\nfor (let i = 1; i < hist.length; i++) {\n    smooth = alpha * hist[i] + (1 - alpha) * smooth;\n}\n\n// previous smooth (for trend)\nlet prevSmooth = context.get(\"prevSmooth\") || smooth;\ncontext.set(\"prevSmooth\", smooth);\n\n// trend\nlet trend = smooth - prevSmooth;\n\n// spike detection\nlet curr = msg.payload;\nlet spike = Math.abs(curr - prevSmooth) > 5;\n\n// prediction\nlet target = 60;\n\nif (Math.abs(trend) < 0.01) {\n    msg.payload = \"Temp stable\";\n    return msg;\n}\n\nlet time = (target - smooth) / trend;\n\n// output\nif (smooth >= target) {\n    msg.payload = \"🔥 Temp already above 60°C\";\n}\nelse if (spike && trend > 0) {\n    msg.payload = \"⚠️ Sudden spike detected!\";\n}\nelse if (time > 0 && time < 120) {\n    msg.payload = \"⚠️ Temp likely to cross 60°C in ~\" + Math.round(time) + \"s\";\n}\nelse {\n    msg.payload = \"Temp stable\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 200,
+        "wires": [
+            [
+                "2516dd27cd6e4a2c"
+            ]
+        ]
+    },
+    {
+        "id": "2df19459434ec73d",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Acc. Predictor",
+        "func": "let alpha = 0.6;\n\n// get history\nlet hist = context.get(\"hist\") || {x:[], y:[], z:[]};\n\n// update function\nfunction update(arr, val){\n    arr.push(val);\n    if(arr.length > 10) arr.shift();\n    return arr;\n}\n\n// update history\nhist.x = update(hist.x, msg.payload.x);\nhist.y = update(hist.y, msg.payload.y);\nhist.z = update(hist.z, msg.payload.z);\n\ncontext.set(\"hist\", hist);\n\n// EWMA over window\nfunction ewma(arr){\n    let s = arr[0];\n    for(let i=1;i<arr.length;i++){\n        s = alpha * arr[i] + (1-alpha)*s;\n    }\n    return s;\n}\n\n// previous smooth\nlet prev = context.get(\"prev\") || {x:0,y:0,z:0};\n\n// current smooth\nlet smooth = {\n    x: ewma(hist.x),\n    y: ewma(hist.y),\n    z: ewma(hist.z)\n};\n\ncontext.set(\"prev\", smooth);\n\n// threshold (~1.5g)\nlet threshold = 14.7;\n\n// analysis\nfunction analyze(s, p, curr){\n    let trend = s - p;\n    let spike = Math.abs(curr - p) > 5;\n\n    if (s >= threshold) return \"🔥 Turbulence NOW\";\n\n    if (spike && trend > 0) return \"⚠️ Sudden spike\";\n\n    if (Math.abs(trend) < 0.01) return \"Stable\";\n\n    let time = (threshold - s) / trend;\n\n    if (time > 0 && time < 120)\n        return \"⚠️ Turbulence in ~\" + Math.round(time) + \"s\";\n\n    return \"Stable\";\n}\n\nlet px = analyze(smooth.x, prev.x, msg.payload.x);\nlet py = analyze(smooth.y, prev.y, msg.payload.y);\nlet pz = analyze(smooth.z, prev.z, msg.payload.z);\n\nmsg.payload =\n\"ACC Prediction:\\nX: \" + px +\n\"\\nY: \" + py +\n\"\\nZ: \" + pz;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 520,
+        "wires": [
+            [
+                "7b5525c91144cd0b"
+            ]
+        ]
+    },
+    {
+        "id": "aa0e6dc6e393eb90",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Gyro Predictor",
+        "func": "let alpha = 0.6;\n\nlet hist = context.get(\"hist\") || { x: [], y: [], z: [] };\n\nfunction update(arr, val) {\n    arr.push(val);\n    if (arr.length > 10) arr.shift();\n    return arr;\n}\n\nhist.x = update(hist.x, msg.payload.x);\nhist.y = update(hist.y, msg.payload.y);\nhist.z = update(hist.z, msg.payload.z);\n\ncontext.set(\"hist\", hist);\n\nfunction ewma(arr) {\n    let s = arr[0];\n    for (let i = 1; i < arr.length; i++) {\n        s = alpha * arr[i] + (1 - alpha) * s;\n    }\n    return s;\n}\n\nlet prev = context.get(\"prev\") || { x: 0, y: 0, z: 0 };\n\nlet smooth = {\n    x: ewma(hist.x),\n    y: ewma(hist.y),\n    z: ewma(hist.z)\n};\n\ncontext.set(\"prev\", smooth);\n\n// gyro threshold\nlet threshold = 0.5;\n\nfunction analyze(s, p, curr) {\n    let trend = s - p;\n    let spike = Math.abs(curr - p) > 0.2;\n\n    if (s >= threshold) return \"🔥 Instability NOW\";\n\n    if (spike && trend > 0) return \"⚠️ Sudden spike\";\n\n    if (Math.abs(trend) < 0.005) return \"Stable\";\n\n    let time = (threshold - s) / trend;\n\n    if (time > 0 && time < 120)\n        return \"⚠️ Instability in ~\" + Math.round(time) + \"s\";\n\n    return \"Stable\";\n}\n\nlet px = analyze(smooth.x, prev.x, msg.payload.x);\nlet py = analyze(smooth.y, prev.y, msg.payload.y);\nlet pz = analyze(smooth.z, prev.z, msg.payload.z);\n\nmsg.payload =\n    \"GYRO Prediction:\\nX: \" + px +\n    \"\\nY: \" + py +\n    \"\\nZ: \" + pz;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 660,
+        "wires": [
+            [
+                "7ec2547ea07a7b7d"
+            ]
+        ]
+    },
+    {
+        "id": "7b5525c91144cd0b",
+        "type": "ui_text",
+        "z": "803b7ab6696fae80",
+        "group": "fb2373e5e894556e",
+        "order": 4,
+        "width": 14,
+        "height": 1,
+        "name": "",
+        "label": "Acceleration Prediction",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1120,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7ec2547ea07a7b7d",
+        "type": "ui_text",
+        "z": "803b7ab6696fae80",
+        "group": "fb2373e5e894556e",
+        "order": 6,
+        "width": 14,
+        "height": 1,
+        "name": "",
+        "label": "Gyroscope Prediction",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1120,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "baa568e190c2a8f9",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Acc. Extractor",
+        "func": "return {\n    payload: {\n        x: msg.payload.acc_x,\n        y: msg.payload.acc_y,\n        z: msg.payload.acc_z\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 520,
+        "wires": [
+            [
+                "2df19459434ec73d"
+            ]
+        ]
+    },
+    {
+        "id": "ca969019b0e5aef8",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Gyro Extractor",
+        "func": "return {\n    payload: {\n        x: msg.payload.gyro_x,\n        y: msg.payload.gyro_y,\n        z: msg.payload.gyro_z\n    }\n};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 660,
+        "wires": [
+            [
+                "aa0e6dc6e393eb90"
+            ]
+        ]
+    },
+    {
+        "id": "9d235f504dc10503",
+        "type": "function",
+        "z": "803b7ab6696fae80",
+        "name": "Risk Func",
+        "func": "let t = msg.payload.temperature;\n\nlet ax = msg.payload.acc_x;\nlet ay = msg.payload.acc_y;\nlet az = msg.payload.acc_z;\n\nlet gx = msg.payload.gyro_x;\nlet gy = msg.payload.gyro_y;\nlet gz = msg.payload.gyro_z;\n\n// 🔹 Magnitudes\nlet acc = Math.sqrt(ax * ax + ay * ay + az * az);\nlet gyro = Math.sqrt(gx * gx + gy * gy + gz * gz);\n\n// 🔹 Normalize (based on your limits)\nlet tempScore = Math.min((t / 60) * 100, 100);\nlet accScore = Math.min((acc / 14.7) * 100, 100);\nlet gyroScore = Math.min((gyro / 0.5) * 100, 100);\n\n// 🔹 Weighted risk score\nlet risk = (0.5 * tempScore) + (0.25 * accScore) + (0.25 * gyroScore);\n\n// 🔹 Status (optional, for debug/dashboard text)\nlet status = \"\";\n\nif (risk < 60) status = \"SAFE\";\nelse if (risk < 80) status = \"MODERATE\";\nelse status = \"CRITICAL\";\n\n// 🔹 OUTPUT FOR GAUGE\nmsg.payload = Math.round(risk);   // or risk.toFixed(2)\n\nmsg.status = status; // optional if you want to show it elsewhere\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 800,
+        "wires": [
+            [
+                "bf512ca68229280a"
+            ]
+        ]
+    },
+    {
+        "id": "bf512ca68229280a",
+        "type": "ui_gauge",
+        "z": "803b7ab6696fae80",
+        "name": "",
+        "group": "fb2373e5e894556e",
+        "order": 2,
+        "width": 7,
+        "height": 5,
+        "gtype": "gage",
+        "title": "RISK ",
+        "label": "",
+        "format": "{{value}} %",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "60",
+        "seg2": "80",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "f226f8b13688d4a0",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.0"
+        }
+    }
+]
