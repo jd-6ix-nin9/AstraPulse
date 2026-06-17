@@ -133,6 +133,96 @@ Responsibilities:
 
 ---
 
+# Hardware Implementation
+
+One of the primary goals of AstraPulse was to create a complete end-to-end IoT telemetry pipeline rather than a dashboard-only project. The hardware layer is responsible for sensing environmental and motion-related parameters, transmitting telemetry through MQTT, and supplying the analytics engine with reliable real-time data.
+
+The entire system is centered around an ESP32 microcontroller that acts as the edge computing node. It continuously collects data from the connected sensors, performs initial processing, and publishes telemetry packets to the MQTT broker. Node-RED then consumes this data and transforms it into live dashboards, historical trends, and predictive insights.
+
+---
+
+# Hardware Wiring Diagram
+
+![AstraPulse Hardware Wiring](screenshots/wokwi-circuit.png.png)
+
+The above diagram represents the complete hardware architecture used in AstraPulse. The ESP32 acts as the central controller, interfacing with both sensing modules and visual status indicators.
+
+The hardware layer was intentionally designed to be simple, scalable, and easy to reproduce while still demonstrating concepts commonly used in industrial IoT systems such as sensor acquisition, telemetry transmission, real-time monitoring, and predictive analytics.
+
+---
+
+# Exact Wiring Connections
+
+## MPU6050 Motion & Attitude Sensor
+
+The MPU6050 is responsible for measuring acceleration and rotational movement.
+
+### Connection Table
+
+| MPU6050 Pin | ESP32 Pin | Function |
+|------------|-----------|----------|
+| VCC | 5V | Power Supply |
+| GND | GND | Ground Reference |
+| SDA | GPIO 21 | I²C Data Line |
+| SCL | GPIO 22 | I²C Clock Line |
+
+### Data Provided
+
+The MPU6050 continuously supplies:
+
+- Acceleration data
+- Motion intensity information
+- Angular velocity measurements
+- Rotational movement tracking
+- Orientation-related telemetry
+
+These readings form the foundation of the Motion Analytics and Attitude Monitoring subsystems used throughout AstraPulse.
+
+---
+
+## Temperature Sensor Module
+
+The temperature sensor continuously monitors thermal conditions and provides environmental telemetry to the ESP32.
+
+### Connection Table
+
+| Temperature Sensor Pin | ESP32 Pin | Function |
+|------------------------|-----------|----------|
+| VCC | 5V | Power Supply |
+| GND | GND | Ground Reference |
+| Signal | GPIO 34 | Analog Temperature Reading |
+
+### Data Provided
+
+The temperature subsystem enables:
+
+- Thermal monitoring
+- Environmental analysis
+- Temperature trend generation
+- Predictive thermal forecasting
+- Risk assessment calculations
+
+Temperature data is transmitted through MQTT and visualized across all three dashboard layers.
+
+---
+
+## Status LED Indicators
+
+Three LEDs are connected directly to the ESP32 and act as a quick visual representation of system conditions.
+
+### Connection Table
+
+| Indicator | ESP32 GPIO | Purpose |
+|------------|------------|----------|
+| LED 1 | GPIO 25 | Temperature Status |
+| LED 2 | GPIO 26 | Motion Status |
+| LED 3 | GPIO 27 | Gyro Status |
+
+### Indicator Logic
+
+The LED system provides immediate physical feedback without requiring access to the dashboard.
+
+
 # Sensor Data Pipeline
 
 AstraPulse follows a structured telemetry pipeline.
