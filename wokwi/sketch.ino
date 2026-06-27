@@ -23,7 +23,7 @@ const char* mqtt_server = "broker.hivemq.com";
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-// 🔧 WiFi connect
+// WiFi connect
 void setup_wifi() {
   Serial.print("Connecting to WiFi");
   WiFi.begin(ssid, password);
@@ -36,7 +36,7 @@ void setup_wifi() {
   Serial.println("\nWiFi Connected!");
 }
 
-// 🔁 MQTT reconnect
+// MQTT reconnect
 void reconnect() {
   while (!client.connected()) {
     Serial.println("Connecting to MQTT...");
@@ -68,16 +68,16 @@ void setup() {
   mpu.setGyroRange(MPU6050_RANGE_250_DEG);
   mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
 
-  // 📡 Connect WiFi
+  // Connect WiFi
   setup_wifi();
 
-  // 📡 MQTT setup
+  // MQTT setup
   client.setServer(mqtt_server, 1883);
 }
 
 void loop() {
 
-  // 🔁 Maintain MQTT
+  // Maintain MQTT
   if (!client.connected()) {
     reconnect();
   }
@@ -105,7 +105,7 @@ void loop() {
     delay(150);
   }
 
-  // 📊 MPU
+  // MPU
   sensors_event_t a, g, temp;
   mpu.getEvent(&a, &g, &temp);
 
@@ -150,7 +150,7 @@ void loop() {
     delay(50);
   }
 
-  // 📦 JSON
+  // JSON
 String payload = "{";
 
 payload += "\"time\":" + String(millis()) + ",";
@@ -170,7 +170,7 @@ payload += "\"gyro\":" + String(totalGyro);
 
 payload += "}";
 
-  // 📡 Publish
+  // Publish
   client.publish("astrapulse/jd/data", payload.c_str());
 
   Serial.println(payload);
